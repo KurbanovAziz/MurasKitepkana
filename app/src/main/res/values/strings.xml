@@ -3,4 +3,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Вход</string>
+    <string name="desc_text">Зарегистрируйтесь, чтобы бесплатно читать книги ваших любимых писателей</string>
+    <string name="Muras">Muras</string>
+    <string name="e_mail">E-mail</string>
+    <string name="code">______ _____ ______ ______</string>
+    <string name="restore">Восстановить</string>
+    <string name="password">Пароль</string>
+    <string name="password_again">Введите пароль снова</string>
+    <string name="accept_rule">я прочитал и согласен с Правилами Пользования и Политикой Конфидециальности</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="login">Войти</string>
+    <string name="forgot_password">вы забыли пароль?</string>
+    <string name="restore_password">Восстановить</string>
+
 </resources>
