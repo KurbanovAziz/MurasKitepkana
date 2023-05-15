@@ -4,32 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.spalsh.SplashActivity">
 
     <LinearLayout
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:gravity="center"
-        android:layout_marginTop="32dp"
         android:id="@+id/logo_layout"
+        android:visibility="gone"
         android:layout_height="wrap_content">
 
         <ImageView
-            style="@style/IconMuras.Small"
+            style="@style/IconMuras"
             android:id="@+id/iv_logo"
             />
 
         <TextView
             android:layout_marginStart="12dp"
             android:fontFamily="@font/ff_roboto_bold"
-            android:textSize="42sp"
+            android:textSize="62sp"
             android:textColor="@color/black"
             android:text="@string/muras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

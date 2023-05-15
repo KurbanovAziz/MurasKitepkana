@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="muras">Muras</string>
+    <string name="welcome_to_muras">Добро пожаловать в Muras -\nприложение для электронной\nкниги, которое позволяет вам\nчитать любимые книги.</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="have_an_account">У вас есть аккаунт?</string>
+    <string name="login">Войти</string>
+    <string name="muras_enjoy_books">С Muras вы можете наслаждаться\nкнигами разных жанров и авторов</string>
+    <string name="muras_read_share">Muras - это не просто приложение\nдля чтения, а целое сообщество\nЧитайте книги и делитесь своими\nвпечатлениями</string>
 </resources>
