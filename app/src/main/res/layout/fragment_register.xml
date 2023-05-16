@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.register.RegisterFragment">
+
+
+<LinearLayout
+        android:id="@+id/logo_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="66dp"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_muras" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/ff_roboto_medium"
+        android:text="@string/muras"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/some_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:fontFamily="@font/ff_roboto_regular"
+    android:text="@string/Text"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/logo_layout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/some_id">
+
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textSize="14sp"
+            android:background="@drawable/button_nav"
+            android:text="@string/регистрация"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/ff_roboto_medium"
+            android:paddingHorizontal="38dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="70dp"
+            android:background="@drawable/button_nav"
+            android:layout_height="36dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/ff_roboto_medium"
+            android:backgroundTint="@color/orange"
+            android:text="@string/вход"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<LinearLayout
+    android:id="@+id/edtemail"
+    app:layout_constraintTop_toBottomOf="@id/btn_layout"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="32dp"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_input_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        app:startIconDrawable="@drawable/ic_mail">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_email"
+            android:background="@drawable/google_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_input_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:hint="@string/пороль"
+        app:startIconDrawable="@drawable/ic_lock">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_password"
+            android:background="@drawable/google_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_input_password2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/the_password_again"
+        app:startIconDrawable="@drawable/ic_lock">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_password2"
+            android:background="@drawable/google_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cnt_google"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/google_button"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_register">
+
+            <ImageView
+                android:id="@+id/img_google"
+                app:layout_constraintEnd_toStartOf="@id/tv_google"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_gogle"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goodle"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/btn_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editext"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        />
+    <TextView
+        android:id="@+id/editext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_checkBox"
+        app:layout_constraintTop_toBottomOf="@id/edtemail"
+        android:text="@string/Text1"
+        android:layout_marginEnd="88dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+<Button
+    android:id="@+id/bnt_Register"
+    android:layout_marginTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:padding="10sp"
+    android:textSize="14sp"
+    android:background="@drawable/button_nav"
+    android:textAllCaps="false"
+    android:layout_marginHorizontal="60dp"
+    android:text="@string/register"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/orange"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/editext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,4 +22,17 @@
         android:name="com.example.muraskitepkana.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/passwordRecoveryFragment"
+        android:name="com.example.muraskitepkana.ui.register.PasswordRecoveryFragment"
+        android:label="PasswordRecoveryFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.muraskitepkana.ui.register.RegisterFragment"
+        android:label="fragment_password_recovery"
+        tools:layout="@layout/fragment_password_recovery" />
+    <fragment
+        android:id="@+id/entranceFragment"
+        android:name="com.example.muraskitepkana.ui.register.EntranceFragment"
+        android:label="EntranceFragment" />
 </navigation>
