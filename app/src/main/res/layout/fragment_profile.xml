@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/settings_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/setting_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar_img"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="52dp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/ff_roboto_regular"
+        android:gravity="center"
+        android:text="This is Nick"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="154dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="243dp"
+        android:fontFamily="@font/ff_roboto_regular"
+        android:gravity="center"
+        android:text="This is Gmail@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chosen_rv"
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="327dp"/>
+    <View
+        android:id="@+id/chosen_vw"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="167dp"
+        android:background="@drawable/corners_left_top_left_bottom_12dp"
+        android:backgroundTint="@color/orange"
+        android:clipToOutline="true"
+        android:outlineProvider="bounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/readed_vw"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginStart="167dp"
+        android:background="@drawable/corners_right_top_right_bottom_12dp"
+        android:backgroundTint="@color/white"
+        android:clipToOutline="true"
+        android:outlineProvider="bounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/chosen_tv"
+        android:layout_marginEnd="175dp"
+        android:layout_marginTop="283dp"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:text="Избранное"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ff_roboto_regular"
+        />
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/readed_tv"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="283dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Прочитанные книги"
+        android:textSize="14sp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/ff_roboto_regular"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
